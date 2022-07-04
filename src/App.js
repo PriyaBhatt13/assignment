@@ -1,5 +1,5 @@
 import RepoList from "./containers/repoList/RepoList";
-import RepoDetail from "./containers/repoDetail/Detail";
+import RepoDetail from "./containers/repoDetail/RepoDetail";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./styles.css";
 

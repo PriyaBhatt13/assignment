@@ -32,9 +32,7 @@ test("Renders Home Page", async () => {
   expect(fetchAllRepos).toHaveBeenCalledTimes(1);
   expect(fetchAllRepos).toHaveBeenCalledWith();
 
-  await waitFor(() =>
-    expect(screen.getByText("interesting repo")).toBeInTheDocument()
-  );
+  await waitFor(() => expect(screen.getByText("repo1")).toBeInTheDocument());
 
   repoArr.forEach((repo) =>
     expect(screen.getByText(repo.name)).toBeInTheDocument()

@@ -3,7 +3,7 @@ import { useParams, useLocation } from "react-router-dom";
 import Card from "../../components/card/Card";
 import { fetchRepo } from "../../api/api";
 
-import "./detail.css";
+import "./repodetail.css";
 
 const RepoDetail = () => {
   const [repo, setRepo] = useState();

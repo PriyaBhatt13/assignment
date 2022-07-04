@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import Detail from "./Detail";
+import RepoDetail from "./RepoDetail";
 import { fetchRepo } from "../../api/api";
 import { MemoryRouter, Route } from "react-router-dom";
 
@@ -24,7 +24,7 @@ test("Renders Repo Detail Page", async () => {
 
   render(
     <MemoryRouter initialEntries={[`/${testRepo.name}`]}>
-      <Route exact path="/:name" component={Detail} />
+      <Route exact path="/:name" component={RepoDetail} />
     </MemoryRouter>
   );
 
